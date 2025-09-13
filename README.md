@@ -33,7 +33,7 @@ The app is deployed on **Streamlit Cloud** and fetches trained models (`.pkl` fi
 
 ## 📂 Project Structure
 - `app.py` → Main Streamlit app
-- train_model.py → Model Training
+- `train_model.py` → Model Training
 - `requirements.txt` → Dependencies for Streamlit Cloud  
 - `README.md` → Project documentation  
 
@@ -51,18 +51,19 @@ The app is deployed on **Streamlit Cloud** and fetches trained models (`.pkl` fi
 - Additional synthetic extreme-fake samples (aliens, time travel, etc.)
 - Balanced using RandomOverSampler
 
-### Performance
+### Performance (Updated)
 
 | Metric    | FAKE (0) | REAL (1) |
 |-----------|----------|----------|
 | Precision | 0.91     | 0.87     |
-| Recall    | 0.86     | 0.91     |
-| F1-score  | 0.88     | 0.89     |
-| Support   | 7674     | 8048     |
+| Recall    | 0.86     | 0.92     |
+| F1-score  | 0.88     | 0.90     |
+| Support   | 7644     | 8048     |
 
-**Accuracy:** 88.8%  
+**Accuracy:** 89.1%  
 **Macro Avg F1:** 0.89  
-**Custom Threshold:** tuned for FAKE detection
+**Weighted Avg F1:** 0.89  
+**🔎 Best threshold for FAKE detection:** `0.5950226471693971`
 
 ---
 
@@ -93,8 +94,8 @@ The app is deployed on **Streamlit Cloud** and fetches trained models (`.pkl` fi
 - scikit-learn for ML tools  
 - [LIME](https://github.com/marcotcr/lime) for explainable AI  
 - Datasets 
-  -- https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification
-  -- https://www.kaggle.com/datasets/hassanamin/textdb3
+  -- https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification  
+  -- https://www.kaggle.com/datasets/hassanamin/textdb3  
 
 ---
 
@@ -106,3 +107,7 @@ The app is deployed on **Streamlit Cloud** and fetches trained models (`.pkl` fi
 | vectorizer.pkl  | [Link](https://drive.google.com/file/d/1Lvrtj2M_cVmcjMVF4_xmiD80nN5Epeep/view?usp=sharing) |
 | threshold.pkl   | [Link](https://drive.google.com/file/d/1Otfi_VsZG1_C3jguU0fzyncGFk4pnWDO/view?usp=sharing) |
 
+---
+
+## 👩‍💻 Author
+**Shrutika Gupta**  
